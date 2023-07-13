@@ -1,0 +1,12 @@
+<p>FormBuilder</p>
+<form [formGroup]="regForm">
+    <label>FirstName</label>
+    <input type="text" formControlName="firstname">
+    <label>LastName</label>
+    <input type="text" formControlName="lastname">
+    <label>Email</label>
+    <input type="text" formControlName="email">
+    <label>password</label>
+    <input type="text" formControlName="password">
+    <button [disabled]="!regForm.valid" (click)="save()">Submit</button>
+    </form>
